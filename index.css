@@ -1,0 +1,61 @@
+body {
+    margin: 3%;
+    padding: 10px;
+  }
+  
+  #container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  #image {
+    width: 100%;
+    max-width: 250px; /* Reduced from 400px to make image smaller */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  
+  .left {
+    flex: 4; /* Increased from 3 to give text more space */
+    min-width: 0;
+  }
+  
+  .right {
+    flex: 1; /* Decreased from 2 to make image column narrower */
+    min-width: 0;
+  }
+  
+  @media screen and (max-width: 900px) {
+    #container {
+      flex-direction: column;
+    }
+  
+    #image {
+      width: 60%; /* Reduced from 80% */
+      max-width: 200px; /* Reduced from 300px */
+      margin-top: 1rem;
+    }
+  
+    .left, .right {
+      width: 100%;
+    }
+  }
+  
+  #center-image {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
